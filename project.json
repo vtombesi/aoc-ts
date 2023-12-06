@@ -1,0 +1,306 @@
+{
+  "name": "ts-aoc-starter",
+  "$schema": "node_modules/nx/schemas/project-schema.json",
+  "targets": {
+    "day-1-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-1-a"
+      }
+    },
+    "day-1-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-1-b"
+      }
+    },
+    "day-2-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-2-a"
+      }
+    },
+    "day-2-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-2-b"
+      }
+    },
+    "day-3-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-3-a"
+      }
+    },
+    "day-3-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-3-b"
+      }
+    },
+    "day-4-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-4-a"
+      }
+    },
+    "day-4-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-4-b"
+      }
+    },
+    "day-5-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-5-a"
+      }
+    },
+    "day-5-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-5-b"
+      }
+    },
+    "day-6-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-6-a"
+      }
+    },
+    "day-6-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-6-b"
+      }
+    },
+    "day-7-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-7-a"
+      }
+    },
+    "day-7-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-7-b"
+      }
+    },
+    "day-8-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-8-a"
+      }
+    },
+    "day-8-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-8-b"
+      }
+    },
+    "day-9-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-9-a"
+      }
+    },
+    "day-9-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-9-b"
+      }
+    },
+    "day-10-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-10-a"
+      }
+    },
+    "day-10-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-10-b"
+      }
+    },
+    "day-11-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-11-a"
+      }
+    },
+    "day-11-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-11-b"
+      }
+    },
+    "day-12-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-12-a"
+      }
+    },
+    "day-12-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-12-b"
+      }
+    },
+    "day-13-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-13-a"
+      }
+    },
+    "day-13-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-13-b"
+      }
+    },
+    "day-14-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-14-a"
+      }
+    },
+    "day-14-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-14-b"
+      }
+    },
+    "day-15-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-15-a"
+      }
+    },
+    "day-15-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-15-b"
+      }
+    },
+    "day-16-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-16-a"
+      }
+    },
+    "day-16-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-16-b"
+      }
+    },
+    "day-17-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-17-a"
+      }
+    },
+    "day-17-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-17-b"
+      }
+    },
+    "day-18-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-18-a"
+      }
+    },
+    "day-18-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-18-b"
+      }
+    },
+    "day-19-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-19-a"
+      }
+    },
+    "day-19-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-19-b"
+      }
+    },
+    "day-20-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-20-a"
+      }
+    },
+    "day-20-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-20-b"
+      }
+    },
+    "day-21-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-21-a"
+      }
+    },
+    "day-21-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-21-b"
+      }
+    },
+    "day-22-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-22-a"
+      }
+    },
+    "day-22-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-22-b"
+      }
+    },
+    "day-23-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-23-a"
+      }
+    },
+    "day-23-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-23-b"
+      }
+    },
+    "day-24-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-24-a"
+      }
+    },
+    "day-24-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-24-b"
+      }
+    },
+    "day-25-a": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-25-a"
+      }
+    },
+    "day-25-b": {
+      "executor": "ts-aoc-starter:puzzle",
+      "options": {
+        "target": "day-25-b"
+      }
+    }
+  }
+}
