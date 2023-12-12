@@ -1,19 +1,27 @@
 import { readData } from '../../shared.ts';
 import chalk from 'chalk';
 
+/**
+ * Represents the configuration of game colors.
+ */
 const gameConfiguration: any = {
   red: 12,
   green: 13,
   blue: 14,
 };
 
-export async function day2b(dataPath?: string) {
+/**
+ * Processes game data, calculates a power value based on color configurations, and accumulates the result.
+ *
+ * @param dataPath - Path to the data to be processed (optional).
+ * @returns The accumulated power value based on the processed game data.
+ */
+export async function day2b(dataPath?: string): Promise<number> {
   const data = await readData(dataPath);
 
   const result = data.reduce((acc: any, item: string, index: number) => {
     let matches = item.match(/Game (\d+):/);
 
-    let id = parseInt(matches[1]);
     let contentString = item.replace(/^Game \d+: /gm, '');
 
     let subMatches = contentString.split('; ');
@@ -25,8 +33,6 @@ export async function day2b(dataPath?: string) {
       blue: 0,
       green: 0,
     };
-
-    console.log(`Analysing id ${id} ---> ${item}`);
 
     subMatches.forEach((configuration) => {
       const parts = configuration.split(', ');
@@ -66,17 +72,18 @@ export async function day2b(dataPath?: string) {
 
     acc += power;
 
-    console.log(
-      id,
-      ' --> ',
-      `Red: ${red}, Green: ${green}, Blue: ${blue} ---> ${power} ---> acc: ${acc}`
-    );
-
     return acc;
   }, 0);
 
   return result;
 }
 
-const answer = await day2b();
-console.log(chalk.bgGreen('Your Answer:'), chalk.green(answer));
+/**
+ * Executes the algorithm for day 2 (part B) and displays the result.
+ */
+async function executeDay2b() {
+  const answer = await day2b();
+  console.log(chalk.bgGreen('Your Answer:'), chalk.green(answer));
+}
+
+executeDay2b(); // Run the algorithm

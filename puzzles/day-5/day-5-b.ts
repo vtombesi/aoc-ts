@@ -153,7 +153,7 @@ function findMatch(target: number, map: any[]) {
     return target + delta;
   }
 
-  return target; // lack of data means to match itself
+  return target;
 }
 
 function matchSeedToSoil(data: { [x: string]: any; seed: any }) {

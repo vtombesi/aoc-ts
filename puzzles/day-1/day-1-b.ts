@@ -1,7 +1,13 @@
 import { readData } from '../../shared.ts';
 import chalk from 'chalk';
 
-export async function day1b(dataPath?: string) {
+/**
+ * Performs transformations on textual representations of numbers and calculates the sum of modified numbers.
+ *
+ * @param dataPath - Path to the data to be processed (optional).
+ * @returns The total sum of numbers obtained after transformations.
+ */
+export async function day1b(dataPath?: string): Promise<number> {
   let data = await readData(dataPath);
 
   let total = 0;
@@ -18,20 +24,14 @@ export async function day1b(dataPath?: string) {
     { orig: 'nine', change: 'nin9e' },
   ];
 
-  data.forEach((item, index) => {
+  data.forEach((item: string | string[], index: string | number) => {
     numbersAsLetters.map((number) => {
       if (item.indexOf(number.orig) > -1) {
         const { orig, change } = number;
-        console.log(
-          `Switching ${orig} with ${change} - Link ${index}`,
-          data[index].split(orig).join(change)
-        );
         data[index] = data[index].split(orig).join(change);
       }
     });
   });
-
-  console.log(data[999]);
 
   const finalNumber: number = data.reduce(
     (acc: any, item: string, index: number) => {
@@ -48,5 +48,12 @@ export async function day1b(dataPath?: string) {
   return total;
 }
 
-const answer = await day1b();
-console.log(chalk.bgGreen('Your Answer:'), chalk.green(answer));
+/**
+ * Executes the algorithm for day 1 (part B) and displays the result.
+ */
+async function executeDay1b() {
+  const answer = await day1b();
+  console.log(chalk.bgGreen('Your Answer:'), chalk.green(answer));
+}
+
+executeDay1b(); // Run the algorithm

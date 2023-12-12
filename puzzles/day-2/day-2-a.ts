@@ -1,13 +1,22 @@
 import { readData } from '../../shared.ts';
 import chalk from 'chalk';
 
+/**
+ * Represents the configuration of game colors.
+ */
 const gameConfiguration: any = {
   red: 12,
   green: 13,
   blue: 14,
 };
 
-export async function day2a(dataPath?: string) {
+/**
+ * Validates and processes game data to determine an accumulated result.
+ *
+ * @param dataPath - Path to the data to be processed (optional).
+ * @returns The accumulated result based on the processed game data.
+ */
+export async function day2a(dataPath?: string): Promise<number> {
   const data = await readData(dataPath);
 
   const result = data.reduce((acc: any, item: string, index: number) => {
@@ -22,7 +31,6 @@ export async function day2a(dataPath?: string) {
 
     subMatches.forEach((configuration) => {
       const parts = configuration.split(', ');
-      console.log('parts: ', parts);
       parts.forEach((part) => {
         if (part.indexOf('red')) {
           const red = part.replace(' red', '');
@@ -55,5 +63,12 @@ export async function day2a(dataPath?: string) {
   return result;
 }
 
-const answer = await day2a();
-console.log(chalk.bgGreen('Your Answer:'), chalk.green(answer));
+/**
+ * Executes the algorithm for day 2 (part A) and displays the result.
+ */
+async function executeDay2a() {
+  const answer = await day2a();
+  console.log(chalk.bgGreen('Your Answer:'), chalk.green(answer));
+}
+
+executeDay2a(); // Run the algorithm
