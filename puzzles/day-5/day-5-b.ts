@@ -101,8 +101,6 @@ const processInput = (input: string) => {
   fillMap(mapTemperToHumidity, stringTemperToHumidity);
 
   fillMap(mapHumidityToLocation, stringUmidityToLocation);
-
-  console.log('mapSeedToSoil', mapSeedToSoil);
 };
 
 function createSeed(token: string) {
